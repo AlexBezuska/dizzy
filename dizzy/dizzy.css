@@ -5,9 +5,9 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  margin: 15px;
+  margin: 15px auto;
   padding: 10px 5px;
-  background: white;
+  background: rgba(0, 0, 0, 0.1);
   position: relative; }
   .dizzy:after {
     clear: both;
@@ -39,7 +39,7 @@
   -o-user-select: none;
   user-select: none;
   color: white;
-  background: #c94586;
+  background: #87796f;
   padding: 15px;
   font-size: 35px;
   margin: 5px;
@@ -48,9 +48,9 @@
   top: 24px;
   z-index: 10; }
   .arrow:hover {
-    background: #cf5993; }
+    background: #93867c; }
   .arrow:active {
-    background: #962c60; }
+    background: #5d534c; }
   .arrow.left {
     left: 5px; }
   .arrow.right {

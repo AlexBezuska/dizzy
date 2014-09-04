@@ -1,7 +1,7 @@
 
 //edit your item size here
 $item-size: 100px;
-$arrow-Color: rgb(201,69,134);
+$arrow-Color: #87796f;
 
 .dizzy{
   width: $item-size * 5.80;
@@ -10,9 +10,9 @@ $arrow-Color: rgb(201,69,134);
   -ms-user-select: none;  
   -o-user-select: none;
   user-select: none;   
-  margin:  $item-size * .15;
+  margin:  $item-size * .15 auto;
   padding: $item-size * .10 $item-size * .05;
-  background: white;
+  background: rgba(0,0,0, .1);
   position: relative;
   &:after{
     clear: both;
