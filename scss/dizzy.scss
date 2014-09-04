@@ -1,0 +1,75 @@
+
+//edit your item size here
+$item-size: 100px;
+$arrow-Color: rgb(201,69,134);
+
+.dizzy{
+  width: $item-size * 5.80;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;  
+  -o-user-select: none;
+  user-select: none;   
+  margin:  $item-size * .15;
+  padding: $item-size * .10 $item-size * .05;
+  background: white;
+  position: relative;
+  &:after{
+    clear: both;
+    display: table;
+    content:"";
+  }
+}
+
+.items{
+  position: relative;
+  left: $item-size * .8;
+  width: $item-size * 4.29;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;  
+  -o-user-select: none;
+  user-select: none;   
+  height: $item-size;
+  overflow-y: hidden;
+}
+
+.item{
+  display: inline-block;
+  position: relative;
+  width: $item-size;
+  height: $item-size;
+}
+
+.arrow{
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  -o-user-select: none;
+  user-select: none;   
+  color: white;
+  background: $arrow-Color;
+  padding: $item-size * .15;
+  font-size: $item-size * .35;
+  margin: $item-size * .05;
+  cursor: pointer;
+  position: absolute;
+  &:hover{
+    background: lighten($arrow-Color, 5%);
+  }
+  &:active{
+    background: darken($arrow-Color, 15%);
+  }
+  top: $item-size * .24;
+  z-index: 10;
+  &.left{
+    left: $item-size * .05;
+  }
+  &.right{
+    right: $item-size * .05;
+  }
+}
+
+  
+
+
